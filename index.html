@@ -1,0 +1,124 @@
+ <!DOCTYPE>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+    <title>PORTFILIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href= "https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <meta name="viewport" content="widthdevice-width, initial-scale=1.0">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>        
+    </head>
+    <body>
+         <div class="container">
+            <nav class="navbar">
+                <h1> PORTFILIO</h1>
+            <ul>
+                <li class="active"><a href="#HOME">HOME</a></li>
+                <li ><a href="#ABOUT">ABOUT</a></li>
+                <li ><a href="#EDUCATION">EDUCATION</a></li>
+                <li ><a href="#EXPERINCE">EXPERINCE</a></li>
+                <li ><a href="#SKILLS">SKILLS</a></li>
+                <li ><a href="#CONTACT">CONTACT</a></li>
+             
+            
+            
+            
+            </ul>
+            </nav>
+        <section id="HOME">
+           
+          
+             
+            
+            
+            <div class="form">
+            
+       
+            <img src="img.png"  class="rounded" width="300" height="300">
+            <h2>SANJITH S</h2>
+            <p> Iam a web developer & web designer  </p>
+            <a class="btn" href="#"><i class="fab fa-facebook"></i></a>
+         <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="btn" href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            </section>
+            
+            <section id="ABOUT">
+                <p>HY MY NAME IS SANJITH IAM A WEB DEVELOPER AND DESIGNER</p>
+          <P>I WILL DO FREELANCE  IF YOU WANT TO CREATE A WEBSITE YOU CAN POST BID WITH PRICE  </P>
+            </section>
+            
+            <section id="EDUCATION">
+            <p>IAM STUDYING BTECH IN CHENGANNUR ENGINEERING COLLEGE</p>
+            </section>
+        
+                <section id="EXPERINCE">
+                    
+                    <p>I HAVE EXPERINCE IN CODING AND CREATING WEBSITE. THIS IS MY DEMO PORTFILIO WEBSITE</p>
+            
+            </section>
+            
+              <section id="SKILLS">
+                  <p>MY SKILLS IN CODE</p>
+     <div class="skills">
+         <div class="skills">
+                      <div class="skill-name">HTML</div>
+                      <div class="skill-bar">
+                          <div class="skill-per" per="80"></div>
+                      </div>
+                  </div>
+                     <div class="skills">
+                      <div class="skill-name">CSS</div>
+                      <div class="skill-bar">
+                          <div class="skill-per" per="60"></div> 
+                         </div>
+                  </div>
+                      
+                      <div class="skills">
+                      <div class="skill-name">Java Script</div>
+                      <div class="skill-bar">
+                          <div class="skill-per" per="35"></div> 
+                         </div>
+                  </div>
+        </div>
+        <script>
+            $('.skill-per').each(function(){
+                var $this = $(this);
+                var per = $this.attr('per');
+                $this.css("width",per+'%');
+                $({animatedValue: 0}).animate({animatedValue: per},{
+                    duration: 1000,
+                    step: function(){
+                        $this.attr('per', Math.floor(this.animatedValue) + '%');
+                    },
+                    complete: function(){
+                        $this.attr('per',Math.floor(this.animatedValue) + '%');
+                    }
+                
+                    
+                });
+                        
+                        
+            });
+            $(document).on('click', 'ul li', function(){
+                $(this).addClass('active').siblings().removeClass('active')
+                                                               
+                                                            
+                                            
+                           
+                           
+                           })
+                
+        
+        </script>
+             </section>
+             <section id="CONTACT">
+                 <p>IF YOU WANT TO CREATE A WEBSITE YOU CAN CONTACT ME: 8301838703</p>
+                 <p>YOU CAN MAIL ME : sanjith945@gmail.com</p>
+             
+             </section>
+             
+           
+        </div>
+    </body>
+</html>
